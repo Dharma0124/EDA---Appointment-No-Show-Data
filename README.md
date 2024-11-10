@@ -1,48 +1,29 @@
-# Exploratory Data Analysis (EDA) for Appointment No-Show Data
+# Exploratory Data Analysis (EDA) Projects Repository
 
-## Project Overview
-This project explores factors influencing patient no-shows for medical appointments. Using various Python libraries, this analysis investigates potential relationships between patient characteristics and appointment attendance rates.
+This repository contains Exploratory Data Analysis (EDA) projects on various datasets, focusing on uncovering insights and understanding patterns within the data. Each project directory includes a Jupyter Notebook with code and visualizations, along with explanations of the EDA process used.
 
-## Dataset
-- **Source**: Kaggle (Dataset includes anonymized patient information and appointment details)
-- **Features**:
-  - `PatientId`: Unique identifier for each patient.
-  - `AppointmentID`: Unique identifier for each appointment.
-  - `Gender`: Patient's gender.
-  - `ScheduledDay`: Date and time when the appointment was scheduled.
-  - `AppointmentDay`: Date of the appointment.
-  - `Age`: Patient's age.
-  - `Neighbourhood`: Location of the appointment.
-  - `Scholarship`: Whether the patient is enrolled in welfare programs.
-  - `Hypertension`, `Diabetes`, `Alcoholism`, `Handcap`: Health indicators.
-  - `SMS_received`: Whether a reminder SMS was received.
-  - `No-show`: Whether the patient missed the appointment.
+## Project Directories
 
-## Steps in the Analysis
-1. **Import Libraries**: Loaded essential libraries like Pandas, NumPy, Matplotlib, and Seaborn for data handling and visualization.
-2. **Data Loading**: Imported the dataset and conducted initial inspections to understand its structure.
-3. **Data Cleaning**:
-   - Checked for and handled missing values.
-   - Converted columns to appropriate data types.
-4. **Feature Engineering**: 
-   - Extracted features such as `AppointmentWeekday` and `ScheduledWeekday`.
-5. **Exploratory Data Analysis (EDA)**:
-   - Conducted univariate and bivariate analyses.
-   - Visualized distribution of ages, no-show rates, and other factors.
-6. **Correlation Analysis**:
-   - Calculated and visualized correlations among numerical features using a heatmap.
-7. **Handling Missing Data**: Imputed missing values where needed.
+### 1. Appointment No-Show Data EDA
+- **Directory**: `Appointment-No-Show-Data`
+- **Description**: This project examines the factors influencing whether a patient will show up for a medical appointment. The dataset includes information on patient demographics, appointment details, and medical history.
+- **Key Steps**:
+  - Data Cleaning and Preparation
+  - Univariate, Bivariate, and Multivariate Analysis
+  - Identification of trends and patterns
+  - Visualizations to display findings
 
-## Key Insights
-- **Age**: Younger patients tended to have higher no-show rates.
-- **SMS Reminders**: Patients who received SMS reminders had slightly lower no-show rates.
-- **Day of the Week**: Appointments scheduled later in the week showed different attendance patterns.
+### 2. Netflix Dataset EDA
+- **Directory**: `Netflix-EDA`
+- **Description**: This project analyzes the Netflix titles dataset, exploring patterns in show type, genres, and release dates. Insights gained may help understand content trends and popular genres.
+- **Key Steps**:
+  - Data Cleaning and Feature Engineering
+  - Data Transformation and Encoding
+  - Univariate and Bivariate Analysis of show types, genres, and country trends
+  - Correlation Matrix and Visualization of findings
 
-## Dependencies
-- Python 3.7 or higher
-- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone <repository-link>
+## How to Use
+Each directory contains a Jupyter Notebook with the full analysis. To view or execute the code:
+1. Clone this repository.
+2. Navigate to the directory of interest.
+3. Open the Jupyter Notebook using Jupyter Lab or Jupyter Notebook.
